@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+// @font-face {
+//   font-family: "HiraginoSans";
+//   src: url("./Font/Hiragino Sans.ttc") format("truetype-collection");
+// }
+
+// @font-face {
+//   font-family: "Hiragino-SansW8";
+//   src: url("./Font/Hiragino-SansW8.otf") format("opentype");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "Hiragino-SansW5";
+//   src: url("./Font/Hiragino-SansW5.otf") format("opentype");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "Hiragino-SansW3";
+//   src: url("./Font/genyogothic_r.otf") format("opentype");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+//------------------------
+
+@font-face {
+  font-family: "Hiragino-SansW8";
+  src: url("./Font/Hiragino-SansW8.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hiragino-SansW5";
+  src: url("./Font/Hiragino-SansW5.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hiragino-SansW3";
+  src: url("./Font/Hiragino-SansW3.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Hiragino-SansW5", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px //setting rem
+  background-color: #3c6ba3; // cadetblue; #3c6ba3
+
+  @media only screen and (min-width: 375px) and (max-width: 390px) {
+    font-size: 62.5%;
+  }
+
+  // iphone
+  @media only screen and (min-width: 390px) and (max-width: 768px) {
+    font-size: 62.5%;
+  }
+
+  // ipad mini
+  @media only screen and (min-width: 768px) and (max-width: 820px) {
+    font-size: 62.5%;
+  }
+
+  // ipad air
+  @media only screen and (min-width: 820px) and (max-width: 912px) {
+    font-size: 62.5%;
+  }
+
+  // surface Pro
+  @media only screen and (min-width: 912px) and (max-width: 1024px) {
+    font-size: 62.5%;
+  }
+
+  // ipad pro
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    font-size: 62.5%;
+  }
+
+  // PC
+  @media only screen and (min-width: 1366px) {
+    font-size: 62.5%;
+  }
+}
+
+@import "./Layout/Home";
